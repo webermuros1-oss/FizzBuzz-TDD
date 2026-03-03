@@ -21,6 +21,19 @@ public class FizzBuzzTest {
         assertEquals("2" , new FizzBuzz().convert(2));
     }
 
+    @Test
+    public void check_3_to_Fizz() {
+        assertEquals("Fizz", new FizzBuzz().convert(3));
+    }
 
+    @Test
+    public void check_5_to_Buzz(){
+        assertEquals("Buzz", new FizzBuzz().convert(5));
+    }
 
-}
+    @Test
+    public void check_15_to_FizzBuzz() {
+        assertEquals("FizzBuzz", new FizzBuzz().convert(15));
+    }
+
+    }
