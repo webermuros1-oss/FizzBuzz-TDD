@@ -1,19 +1,20 @@
 package fizzbuzz;
 
-import org.junit.Test;
-
+import org.example.fizzbuzz.FizzBuzz;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
 
+    // Si el número es múltiplo de tres, devolverá la palabra "Fizz".
+    // Si el número es múltiplo de cinco, devolverá la palabra "Buzz".
+    // Si el número es múltiplo de tres y de cinco, devolverá la palabra "FizzBuzz".
+    // Si no coincide las opciones de arriba retorna el numero.
+
     @Test
     public void check_1_to_1() {
-        assertEquals("1", new convertir(1));
+        assertEquals("1", new FizzBuzz().convert(1));
     }
 
-    private class convertir {
-        public convertir(int i) {
-        }
-    }
+
 }
-
